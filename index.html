@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="navigation">
+      <nav>
+        <div class="brand">
+          <a href="/"> MrSaaD </a>
+        </div>
+        <div id="menu"></div>
+        <ul>
+          <li><a href="#navigation">Home</a></li>
+          <li><a href="#tips">Tips</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="rightSideNav">
+        <button>Signup</button>
+      </div>
+    </header>
+    <!-- hero section ============================================ -->
+    <div class="hero_section">
+      <div class="left-side" data-aos="fade-right" data-aos-delay="300">
+        <h1>Saad Khatri's</h1>
+        <p>Sample Website <br />contact me for business inquiry</p>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="right-side" data-aos="fade-left" data-aos-delay="600">
+        <img
+          src="https://raw.githubusercontent.com/thapatechnical/responsivewebsite/main/images/heropage.png"
+          alt="hero"
+        />
+      </div>
+    </div>
+
+    <!-- tips =============================================== -->
+    <div class="tips" id="tips">
+      <h1>Some Tips For You</h1>
+      <p>try some of these</p>
+
+      <div class="cards">
+        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+          <img
+            src="https://raw.githubusercontent.com/thapatechnical/responsivewebsite/main/images/sectionIcon1.png"
+            alt="1"
+          />
+          <h3>Learn & Improve</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, quas!
+          </p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+          <img
+            src="https://raw.githubusercontent.com/thapatechnical/responsivewebsite/main/images/sectionIcon2.png"
+            alt="1"
+          />
+          <h3>Time Management</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, quas!
+          </p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+          <img
+            src="https://raw.githubusercontent.com/thapatechnical/responsivewebsite/main/images/sectionIcon3.png"
+            alt="1"
+          />
+          <h3>Stay Motivated</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, quas!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact ======================================================== -->
+    <div class="contact" id="contact">
+      <h1>Contact Me</h1>
+      <div class="containerDiv">
+        <div class="leftSide" data-aos="flip-right" data-aos-delay="500">
+          <h2>Saad Khatri</h2>
+          <p>FullStack Web Developer</p>
+        </div>
+        <div class="rightSide" data-aos="flip-left" data-aos-delay="700">
+          <p><i class="fas fa-envelope"></i> email: khatrisaad233@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> mobile: 999-999-9999</p>
+          <p><i class="fab fa-instagram"></i> instagram: @saad.khatri_12</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="innerFooter">
+        <h1>MrSaaD</h1>
+        <div class="mainFooter">
+          <div>
+            <h2>Products</h2>
+            <p>Product 1</p>
+            <p>Product 2</p>
+            <p>Product 3</p>
+            <p>Product 4</p>
+          </div>
+          <div>
+            <h2>Pricing</h2>
+            <p>400</p>
+            <p>600</p>
+            <p>700</p>
+            <p>800</p>
+          </div>
+          <div>
+            <h2>Links</h2>
+            <p><i class="fab fa-instagram-square"></i>Instagram</p>
+            <p><i class="fab fa-facebook"></i>Facebook</p>
+            <p><i class="fab fa-twitter"></i>Twitter</p>
+            <p><i class="fab fa-telegram"></i>Telegram</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="rights">
+        All Rights reserved &copy; <a href="/">MrSaaD</a> 2021
+      </p>
+    </footer>
+
+    <script>
+      const menu = document.getElementById("menu");
+      const ul = document.querySelector("ul");
+      menu.onclick = () => {
+        ul.classList.toggle("active");
+      };
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
